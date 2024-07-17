@@ -19,16 +19,16 @@ loss_type = "clip_ce" #
 resume_checkpoint = "./workspace/ckpt/htsat_audioset_pretrain.ckpt"
 # "/home/Research/model_backup/AudioSet/HTSAT_AudioSet_Saved_1.ckpt"
  
-esc_fold = 0 # just for esc dataset, select the fold you need for evaluation and (+1) validation
+esc_fold = 4 # just for esc dataset, select the fold you need for evaluation and (+1) validation
 
 
 debug = False
 
 random_seed = 970131 # 19970318 970131 12412 127777 1009 34047
-batch_size = 64 # batch size per GPU x GPU number , default is 32 x 4 = 128
+batch_size = 32 # batch size per GPU x GPU number , default is 32 x 4 = 128
 learning_rate = 1e-3 # 1e-4 also workable 
 max_epoch = 100
-num_workers = 3
+num_workers = 8
 
 lr_scheduler_epoch = [10,20,30]
 lr_rate = [0.02, 0.05, 0.1]
@@ -73,7 +73,7 @@ htsat_num_head = [4,8,16,32]
 htsat_dim = 96 
 htsat_depth = [2,2,6,2]
 
-swin_pretrain_path = None
+swin_pretrain_path = '/home/viplab/HTS-Audio-Transformer/swin_tiny_c24_patch4_window8_256.pth'
 # "/home/Research/model_backup/pretrain/swin_tiny_c24_patch4_window8_256.pth"
 
 # Some Deprecated Optimization in the model design, check the model code for details

@@ -4,7 +4,7 @@
 # The configuration for training the model
 
 exp_name = "exp_htsat_pretrain" # the saved ckpt prefix name of the model 
-workspace = "/home/kechen/Research/HTSAT" # the folder of your code
+workspace = "/home/kechen/Research/HTSAT" # the folder of your code /home/viplab/HTS-Audio-Transformer
 dataset_path = "/home/Research/audioset" # the dataset path
 desed_folder = "/home/Research/DESED" # the desed file
 
@@ -12,7 +12,7 @@ dataset_type = "audioset" # "audioset" "esc-50" "scv2"
 index_type = "full_train" # only works for audioset
 balanced_data = True # only works for audioset
 
-loss_type = "clip_bce" # 
+loss_type = "clip_ce" # 
 # AudioSet & SCV2: "clip_bce" |  ESC-50: "clip_ce" 
 
 # trained from a checkpoint, or evaluate a single model 
@@ -73,7 +73,7 @@ htsat_num_head = [4,8,16,32]
 htsat_dim = 96 
 htsat_depth = [2,2,6,2]
 
-swin_pretrain_path = None
+swin_pretrain_path = '/home/viplab/HTS-Audio-Transformer/swin_tiny_c24_patch4_window8_256.pth'
 # "/home/Research/model_backup/pretrain/swin_tiny_c24_patch4_window8_256.pth"
 
 # Some Deprecated Optimization in the model design, check the model code for details

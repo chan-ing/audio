@@ -1,0 +1,5 @@
+Requirement already satisfied: numba in /home/viplab/anaconda3/envs/hts/lib/python3.8/site-packages (0.58.1)
+Requirement already satisfied: llvmlite<0.42,>=0.41.0dev0 in /home/viplab/anaconda3/envs/hts/lib/python3.8/site-packages (from numba) (0.41.1)
+Requirement already satisfied: numpy<1.27,>=1.22 in /home/viplab/anaconda3/envs/hts/lib/python3.8/site-packages (from numba) (1.24.4)
+Requirement already satisfied: importlib-metadata in /home/viplab/anaconda3/envs/hts/lib/python3.8/site-packages (from numba) (8.0.0)
+Requirement already satisfied: zipp>=0.5 in /home/viplab/anaconda3/envs/hts/lib/python3.8/site-packages (from importlib-metadata->numba) (3.17.0)
